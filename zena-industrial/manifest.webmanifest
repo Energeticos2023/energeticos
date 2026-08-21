@@ -1,0 +1,10 @@
+{
+  "name": "ZEÑA INDUSTRIAL | Soldadura y Metalmecánica",
+  "short_name": "ZEÑA INDUSTRIAL",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#0b1220",
+  "description": "Soldadura, metalmecánica, fabricación, montaje, reparación de maquinaria pesada y mantenimiento industrial.",
+  "icons": []
+}

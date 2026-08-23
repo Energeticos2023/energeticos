@@ -2,9 +2,16 @@
   "name": "ZEÑA INDUSTRIAL | Soldadura y Metalmecánica",
   "short_name": "ZEÑA INDUSTRIAL",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
+  "lang": "es-PE",
   "background_color": "#07111f",
   "theme_color": "#0b1220",
   "description": "Soldadura, metalmecánica, fabricación, montaje, reparación de maquinaria pesada y mantenimiento industrial.",
-  "icons": []
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
 }

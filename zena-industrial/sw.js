@@ -1,6 +1,5 @@
-const CACHE='zena-industrial-v4';
-const ASSETS=['./','manifest.webmanifest','favicon.svg','icon-192.png','icon-512.png',
-'assets/01-planta-minera.jpg','assets/03-montaje-estructura.jpg','assets/04-reparacion-maquinaria.jpg','assets/05-soldadura-excavadora.jpg'];
+const CACHE='zena-industrial-v5';
+const ASSETS=['./','manifest.webmanifest','favicon.svg','icon-192.png','icon-512.png'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>Promise.allSettled(ASSETS.map(a=>c.add(a)))))});
 self.addEventListener('activate',e=>{e.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()]))});
 self.addEventListener('fetch',e=>{
